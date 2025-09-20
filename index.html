@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RSD OSS OÜ — Arukad IT-lahendused ja süsteemidisain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0e1116;
+      --fg:#e8edf2;
+      --muted:#aeb8c6;
+      --card:#151a22;
+      --brand:#36c6a0;
+      --brand-2:#71b7ff;
+      --line:rgba(255,255,255,.08);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(800px 400px at 10% 0,rgba(113,183,255,.15),transparent 60%),
+                     radial-gradient(700px 350px at 90% 10%,rgba(54,198,160,.14),transparent 60%),var(--bg);
+         color:var(--fg);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--brand)}
+    header{position:sticky;top:0;background:rgba(14,17,22,.7);backdrop-filter:blur(8px);z-index:10;border-bottom:1px solid var(--line)}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .logo{font-family:"Playfair Display",serif;font-weight:700;letter-spacing:.3px}
+    .logo span{color:var(--brand)}
+    .nav a{margin-left:18px;text-decoration:none;color:var(--fg);opacity:.85}
+    .nav a:hover{opacity:1}
+    section{padding:70px 0;border-bottom:1px solid var(--line)}
+    h1,h2{font-family:"Playfair Display",serif;margin:0 0 10px}
+    h1{font-size:46px;line-height:1.12}
+    h2{font-size:32px}
+    p{margin:8px 0 14px;color:var(--muted)}
+    .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;padding:90px 0}
+    .pill{display:inline-block;background:rgba(54,198,160,.15);color:#d9fff4;border:1px solid rgba(54,198,160,.35);
+          padding:6px 12px;border-radius:999px;font-size:12px;letter-spacing:.4px;margin-bottom:10px}
+    .lead{font-size:18px;color:#cfd7e4}
+    .hero img{width:100%;border-radius:14px;border:1px solid var(--line)}
+    .grid{display:grid;gap:18px}
+    .g-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .kpis{display:flex;gap:16px;margin-top:14px}
+    .kpi{background:rgba(113,183,255,.08);border:1px solid rgba(113,183,255,.25);padding:10px 12px;border-radius:10px}
+    .step{display:flex;gap:14px;align-items:flex-start}
+    .num{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;font-weight:700}
+    form{display:grid;gap:12px}
+    input,textarea,button{font:inherit}
+    input,textarea{background:#0b0e13;color:var(--fg);border:1px solid var(--line);border-radius:10px;padding:12px}
+    textarea{min-height:120px;resize:vertical}
+    button{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#061016;font-weight:700;border:0;padding:12px 16px;border-radius:12px;cursor:pointer}
+    button:hover{opacity:.95}
+    footer{padding:26px 0;color:#c9d2df}
+    .badges{display:flex;gap:10px;flex-wrap:wrap}
+    .badge{font-size:12px;border:1px solid var(--line);padding:6px 10px;border-radius:999px;background:#0b0e13}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="logo">RSD <span>OSS</span> OÜ</div>
+    <nav>
+      <a href="#meist">Kes me oleme</a>
+      <a href="#teenused">Teenused</a>
+      <a href="#eelised">Eelis</a>
+      <a href="#protsess">Kuidas töötame</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<!-- 1. PEAEKRAAN -->
+<section class="wrap hero" id="avaleht">
+  <div>
+    <div class="pill">Arukas süsteemidisain ja tarkvara</div>
+    <h1>Digitaalne selgroog sinu ärile — süsteemid, mis räägivad omavahel.</h1>
+    <p class="lead">
+      RSD OSS OÜ projekteerib ja arendab ärikriitilisi infosüsteeme: API-d, andmevood, pilve-infrastruktuur ning
+      turvalised integratsioonid ERP-i ja e-kaubandusega. Toome sinu andmed ühele keelele ja automatiseerime protsessid,
+      et kasv oleks mõõdetav ja stabiilne.
+    </p>
+    <div class="kpis">
+      <div class="kpi">⏱️ Go-live 6–12 nädalat</div>
+      <div class="kpi">99.95% töökindlus SLI</div>
+      <div class="kpi">ISO/OWASP praktikad</div>
+    </div>
+  </div>
+  <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop" alt="Pilvelahendused ja integratsioonid" />
+</section>
+
+<!-- 2. MEIST -->
+<section id="meist">
+  <div class="wrap">
+    <h2>Kes me tegelikult oleme</h2>
+    <p>
+      RSD OSS OÜ on Tallinnas tegutsev süsteemidisaini ja sellega seotud teenuste meeskond, kes ühendab tarkvara-arenduse,
+      andmeinseneeria ja pilvehalduse üheks tervikuks. Meie fookus on äriprotsesside digitaliseerimisel — tõstame tellimuste
+      täpsust, lühendame käsitööd ja eemaldame dubleerivad andmed. Tegutseme tehnoloogiatega nagu .NET 8, Node.js, Python,
+      PostgreSQL/BigQuery, Docker/Kubernetes ning Azure/AWS. Praktikas tähendab see skaleeritavaid API-sid, töökindlaid
+      ETL-torustikke ja läbipaistvat jälgitavust (OpenTelemetry). Me ei müü „karbitooteid“, vaid ehitame lahenduse,
+      mis sobitub sinu äriloogikasse.
+    </p>
+  </div>
+</section>
+
+<!-- 3. TEENUSED -->
+<section id="teenused">
+  <div class="wrap">
+    <h2>Mida me päriselt teeme</h2>
+    <div class="grid g-3">
+      <div class="card">
+        <h3>Integratsioonid & API-d</h3>
+        <p>
+          Disainime ja rakendame REST/GraphQL API-sid, mis seovad ERP-i (Dynamics 365/Odoo), e-poed (Shopify/Medusa)
+          ja logistika. Versioonitud liidesed, rate-limit, retry poliitikad ja idempotentsed tellimused on meil standard.
+        </p>
+        <p>Taristul: Azure API Management, Kong, Postman test-suite, GitHub Actions CI/CD.</p>
+      </div>
+      <div class="card">
+        <h3>Andmevood & analüütika</h3>
+        <p>
+          Ehitatame ETL/ELT torud Airflow’ga ja dbt-ga, kujundame andmelaod (PostgreSQL/BigQuery) ning
+          teostame master-data puhastuse. KPI-d tuuakse Looker Studio/Metabase’i koos andmekvaliteedi valvega.
+        </p>
+        <p>Andmekataloog, skeemide migratsioonid ja automaatsed andmetestid kuuluvad paketti.</p>
+      </div>
+      <div class="card">
+        <h3>Pilv & turvalisus</h3>
+        <p>
+          Migreerime rakendused Azure’i või AWS-i, konteinerdame (Docker/Kubernetes) ja rakendame
+          „least privilege“ poliitikaid. OWASP ASVS kontrollnimekiri, SSO (Azure AD/Keycloak) ja auditilogid.
+        </p>
+        <p>SLI/SLO kokkulepped, alerting Prometheus/Grafana ning „runbookid“ toetusele.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. MIKS MEIE / EELISED -->
+<section id="eelised">
+  <div class="wrap">
+    <h2>Miks kliendid meid valivad</h2>
+    <div class="grid g-3">
+      <div class="card">
+        <h3>Äriloogika enne koodi</h3>
+        <p>
+          Kaardistame protsessid BPMN-iga ja kirjeldame sündmustevood enne arendust.
+          Nii väldime „vale asja õigesti“ ehitamist ja tabame ROI juba esimese iteratsiooniga.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Läbipaistev tarne</h3>
+        <p>
+          Iganädalased demo-sessioonid, backlog groomimine ja mõõdetavad eesmärgid (SLO, deployment frequency).
+          Kliendil on alati ülevaade, mis on „done“ ja mis on järgmine.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Turvaline vaikimisi</h3>
+        <p>
+          Turbetestid CI-s, sõltuvuste skaneerimine, secret-ite haldus ja andmete pseudonüümimine.
+          Meie lahendused läbivad auditid ilma „tulekustutusteta“.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. KUIDAS ME TÖÖTAME / PROTSESS -->
+<section id="protsess">
+  <div class="wrap">
+    <h2>Kuidas me projekti läbi viime</h2>
+    <div class="grid">
+      <div class="card step">
+        <div class="num">1</div>
+        <div>
+          <h3>Diagnostika & töötoa päev</h3>
+          <p>Ühiselt määratleme „kõige kallima käsitöö“ ja mõõdame selle mõju. Koostame arhitektuuriskeemi ja sprint-0 plaani.</p>
+        </div>
+      </div>
+      <div class="card step">
+        <div class="num">2</div>
+        <div>
+          <h3>Iteratiivne ehitus</h3>
+          <p>Ehitus 1–2-nädalaste sprintidena: API-d, andmetorud, UI vajadusel. Iga sprindi lõpus demo ja kasutajate tagasiside.</p>
+        </div>
+      </div>
+      <div class="card step">
+        <div class="num">3</div>
+        <div>
+          <h3>Go-live & hooldus</h3>
+          <p>Canary release, jälgitavus, runbookid ja teadmussiirde sessioonid. Jätkume SLA-ga või aitame in-house tiimi üle võtta.</p>
+        </div>
+      </div>
+    </div>
+    <div class="badges" style="margin-top:16px">
+      <span class="badge">Tech: .NET 8, Node.js, Python</span>
+      <span class="badge">DB: PostgreSQL, BigQuery</span>
+      <span class="badge">Cloud: Azure, AWS</span>
+      <span class="badge">Ops: Docker, K8s, GitHub Actions</span>
+    </div>
+  </div>
+</section>
+
+<!-- 6. KONTAKTVORM (tekst + fraasid) -->
+<section id="kontakt">
+  <div class="wrap">
+    <h2>Võta ühendust</h2>
+    <p>Allpool on tüüplausungid, mida kasutame kontaktvormis — vajadusel kohanda oma kasutusjuhuks.</p>
+    <div class="grid g-3">
+      <div class="card">
+        <h3>Vormi fraasid</h3>
+        <ul>
+          <li>„Räägi meile oma väljakutsest“</li>
+          <li>„Millise süsteemi(-de)ga peame liidestama?“</li>
+          <li>„Mis on edu mõõdik (KPI), mida soovid parandada?“</li>
+          <li>„Eelistatud ajakava ja eelarveraam“</li>
+        </ul>
+      </div>
+      <div class="card" style="grid-column: span 2;">
+        <h3>Kiirvorm</h3>
+        <form onsubmit="event.preventDefault(); const n=document.getElementById('name').value.trim(); alert((n?n+', ':'')+'aitäh! Sinu päring on salvestatud. Võtame ühendust 1–2 tööpäeva jooksul.'); this.reset();">
+          <input id="name" type="text" placeholder="Sinu nimi" required>
+          <input type="email" placeholder="Sinu e-post" required>
+          <textarea placeholder="Kirjelda lühidalt oma integratsiooni või probleemi..." required></textarea>
+          <button type="submit">Saada päring</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. KONTAKTID -->
+<footer>
+  <div class="wrap">
+    <strong>Kontaktid</strong>
+    <p>
+      Aadress: Lootsa tn 5, Lasnamäe, 11415 Tallinn, Harjumaa, Eesti<br/>
+      E-post: <a href="mailto:sebasybka@zohomail.eu">sebasybka@zohomail.eu</a>
+    </p>
+    <p style="color:#9fb0c4">© RSD OSS OÜ — Computer Systems Design and Related Services</p>
+  </div>
+</footer>
+</body>
+</html>
